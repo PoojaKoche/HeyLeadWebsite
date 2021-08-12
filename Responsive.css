@@ -1,0 +1,133 @@
+@media only screen and (max-width:1277px) {
+header{
+    width: 114%;
+}
+#home-section{
+    width: 118%;
+}
+#services-section{
+    width: 118%;
+}
+#about-section {
+    width: 118%;   
+}
+.row-box{
+    width: 184px;
+    left: 38px;
+}
+.row-box-second{
+    width: 186px;
+    left: 28px;
+}
+.right-side-arrow img{
+    right: -142px;
+}
+#our-team{
+    width: 119%;
+}
+.team-container{
+    right: -163px;
+}
+.team2-container{
+    right: 10px;
+    margin: 99px 52px;
+}
+.team3-container{
+    right: 295px;
+}
+.team4-container{
+    right: 550px;
+}
+#latest-blog{
+    width: 120%;
+}
+.blogBox{
+    margin-left: 32px;
+}
+#subscription{
+    width: 120%;
+}
+#footer{
+    width: 120%;
+}
+.footer-col2{
+    left: 212px;
+}
+}
+@media only screen and (max-width: 978px){
+/* Adjusting header */
+header{
+    width: 115%;
+}
+/* Adjusting home section */
+#home-section{
+    width: 120%;
+}
+/* Adjusting service-section */
+#services-section {
+    width:120%;
+}
+.container{
+    position:unset;
+    float: right;
+}
+.container-second{
+    position: unset;
+    float: right;
+}
+.container-third{
+    position: unset;
+    float: right;
+    right: 560px;
+    margin-top: 146px;
+}
+/* Adjusting About-section */
+#about-section{
+    width: 120%;
+}
+.right-side-arrow img {
+    right: -138px;
+}
+.row-box{
+    margin-left: 24px;
+}
+.row-box-second {
+    margin-left: 25px;
+}
+/* Adjusting Our team section */
+#our-team{
+    width: 120%;
+}
+.team-container {
+    right: -148px;
+}
+.team2-container {
+    right: 59px;
+    margin: 114px 29px;
+}
+.team3-container {
+    right: 351px;
+}
+.team4-container {
+    right: 604px;
+}
+/* Adjusting latest blog section */
+#latest-blog {
+width: 120%;
+}
+.blogBox{
+    margin-left: 27px;
+}
+/* Adjusting Subscribe section */
+#subscription{
+    width: 120%;
+}
+/* Adjusting footer section */
+#footer{
+    width: 120%;
+}
+.footer-col2 {
+    left: 163px;
+}
+
+}

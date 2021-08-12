@@ -1,0 +1,705 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* for smooth scrolling */
+body,html{
+    scroll-behavior: smooth;
+}
+/* added background to header */
+header{
+    padding: 23px;
+    background-color: #fef9f6;
+    width: 100%;
+}
+/*adjusting logo div so that it will place home, services, about contact us on same line */
+#logo{
+    display: inline-block;
+    margin-left: 50px;
+}
+/* logo img sizing */
+#logo img{
+    height: 50px;
+    width: 148px;
+}
+/* place home, services, about, contact us on right */
+.nav-link{
+    float: right;
+}
+/* to adjust home, services, about, contact us in a row */
+.nav-link ul{
+    display: flex;
+    margin-right: 278px;
+}
+/* remove the default styling of home, services, about, contact us  */
+.nav-link ul li{
+    list-style: none;
+    margin: 15px;
+}
+/* added font colour,size, font name */
+.nav-link ul li a{
+    text-decoration: none;
+    padding: 16px 25px;
+    color: #919596;
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+}
+/* when mouse is on home, services, about, contact us font color changes & underline will show */
+.nav-link ul li a:hover{
+    color: #253036;
+    text-decoration: underline;
+    text-decoration-color: #cd633c;
+}
+/* log in button on right side */
+.login-btn{
+    float: right;
+    margin: -44px 43px;
+}
+/* beautifying log in, get stared, subscribe button  */
+.btn{
+    background-color: rgb(222, 93, 54);
+    color: rgb(255, 251, 255);
+    font-size: 13px;
+    font-family: 'Poppins', sans-serif;
+    padding: 10px 22px;
+    border: 2px solid rgb(222, 93, 54);
+    border-radius: 23px;
+    cursor: pointer;
+}
+/* Mouse over effect for log in, get stared, subscribe button */
+.btn:hover{
+    background-color:#123549 ;
+    border: 2px solid #123549;
+
+}
+/* styling for image inside log in button */
+.btn img{
+    height: 13px;
+    width: 21px;
+    margin-right: 9px;
+    filter: invert(1);
+}
+  /* popup log in form - hidden by default */
+  .form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+  }
+  /* Add styles to the form container */
+  .form-container {
+    width: 300px;
+    padding: 10px;
+    background-color: white;
+  }
+  /* style to the input fields */
+  .form-container input {
+    width: 90%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    border-radius: 10px;
+    background-color: #ddd;
+    outline: none;
+  }
+  /* Set a style for the login & Cancel button */
+  .form-container .btnLogIn {
+    background-color: #ff5722;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+    font-size: 20px;
+    border-radius: 20px;
+
+  }
+  .form-container .btnCancel {
+    background-color: #051e2e;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+    font-size: 18px;
+    border-radius: 20px;
+  }
+  /* *******************Home Section********************* */
+  /* added background to home section */
+#home-section{
+    background: url('Images/homebg.jpg') center/cover; 
+    height: 450px;
+    width: 100%;
+}
+/* styling for heading inside home section (starts with "Smart Ideas
+For Your...") */
+.home-heading{
+    display: inline-block;
+    margin: 69px 0px 0 115px;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    color: #002838;
+}
+/* styling paragraph in home sectio (starts with "HeyLead is all about lead...")  */
+.home-para{
+    width: 38%;
+    line-height: 27px;
+    margin: 20px 115px;
+    font-size: 18px;
+    color: #91827d;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+}
+/* margin to get started button */
+.get-started-btn{
+    margin: 29px 140px;
+}
+/* placing boy image on right side */
+.boyImg{
+    float: right;
+}
+/* height for boy image */
+.boyImg img{
+    height: 400px;
+    margin-right: 85px;
+}
+/* styling to markrting logo div which has images such as facebook marketing, bing ads google ads, yahoo market search  */
+.marketing-logo{
+    float: right;
+    padding: 30px;
+    margin: -24px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    background: #ffffff;  
+    box-shadow: #fef9f6 2px 10px 14px 8px;
+}
+/* Adjusting image size of facebook marketing, bing ads google ads, yahoo market search */
+.marketing-logo img{
+    height: 42px;
+    width: 134px;
+    margin: 0px 17px;
+}
+/* *******************Services Section********************* */
+/* added background to service section */
+#services-section{
+    height: 800px;
+    width: 100%;
+    background: url('Images/taskbg-servicesection3.jpg')no-repeat center center/cover;
+}
+/* styling to heading of what we do, industries we've work with, our client, our team, latest blogs */
+.heading-all{
+    margin: 140px 0px 0 115px;
+    line-height: 57px;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    color: #052d46;
+    font-size: 42px;   
+}
+/* added small buttom border to above headings */
+.heading-all span{
+    border-bottom: 10px solid #d45f3c;
+}
+/* move social media, web development, reporting boxes to right side */
+.container{
+        position: absolute;
+        right: 0;
+}
+/* Styling to the boxes which are social media, web development, reporting*/
+.box{
+    background-color: white;
+    height: 178px;
+    width: 180px;
+    margin-bottom: 20px;
+    margin-right: 36px;
+    padding: 38px;
+    border-radius: 9px;
+    box-shadow: #d3d0ce 1px 6px 12px 2px;
+}
+/* adjusting height width of logo images inside social media, web development, reporting boxes */
+.container img{
+    height: 51px;
+    width: 50px;
+    margin-bottom: 10px;
+}
+/* styling to heading social media, web development, reporting */
+.container h5{
+    color: #001b2e;
+    font-size: 14px;
+    padding: 4px;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+} 
+/* added style to paragraph inside social media, web development, reporting  boxes*/
+.container p{
+    font-size: 13px;
+    padding: 4px;
+    color: #777f82;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+}
+/* Styling right arrow slider button in present in all boxes */
+.arrow-slider-btn{
+    display: flex;
+    border: none;
+    background: white;
+    width: 95%;
+    cursor: pointer;
+}
+/* Mouse over effect to right arrow slider button */
+.arrow-slider-btn:hover{
+    background: rgb(236, 233, 233);
+    border-radius: 10px;
+}
+/* adjusting right arrow image inside arrow slider button */
+.arrow-slider-btn img{
+    height: 20px;
+    width: 40px;
+    margin: 4px;
+}
+/* move search engine marketing, remarketing boxes just nearer to social media, web development, reporting boxes  */
+.container-second{
+    position: absolute;
+    top: 825px;
+    right: 279px;
+}
+/* Styling to the boxes which are search engine marketing, remarketing*/
+.box1{
+    background-color: white;
+    height: 178px;
+    width: 180px;
+    margin-bottom: 20px;
+    margin-right: 36px;
+    padding: 38px;
+    border-radius: 9px;
+    box-shadow: #d3d0ce 1px 6px 12px 2px;
+}
+/* adjusting height width of logo images inside search engine marketing, remarketing boxes */
+.box1img{
+    height: 56px;
+    width: 62px;
+    margin-bottom: 10px;
+}
+/* styling to heading of search engine marketing, remarketing*/
+.container-second h5{
+    color: #001b2e;
+    font-size: 14px;
+    padding: 4px;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+}
+/* added style to paragraph inside search engine marketing, remarketing  boxes*/
+.container-second p{
+    font-size: 13px;
+    padding: 4px;
+    color: #777f82;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+}
+/* move search engin optimization box just nearer to search engine marketing, remarketing boxes */
+.container-third{
+    position: absolute;
+    top: 990px;
+    right: 560px;
+}
+/* Styling to the search engine optimization box*/
+.box2{
+    background-color: white;
+    height: 188px;
+    width: 180px;
+    margin: 7px 0;
+    margin-right: 36px;
+    padding: 38px;
+    border-radius: 9px;
+    box-shadow: #d3d0ce 1px 6px 12px 2px;
+}
+/* adjusting height and width of logo image inside search engine optimization box */
+.box2img{
+    height: 56px;
+    width: 62px;
+    margin-bottom: 10px;
+}
+/* Styling heading inside search engine optimization box */
+.container-third h5{
+    color: #001b2e;
+    font-size: 14px;
+    padding: 4px;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+}
+/* Styling paragraph inside search engine optimization box */
+.container-third p{
+    font-size: 13px;
+    padding: 4px;
+    color: #777f82;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+}
+/* *******************About Section(industries we've worked with, our client,our team,latest blog, subscribe)********************* */
+/* added background to about(industries we've worked with, our client) section */
+#about-section{
+    background: url('Images/about1.jpg')no-repeat center center/cover;
+    height: 700px;
+    width: 100%;
+}
+/* place real estate, ecommerce, cloud computing, analytics & avidian, caller ready, woodruff, ever loved boxes in a row */
+.row{
+    display: flex;
+}
+/* adjusting boxes of real estate, ecommerce, cloud computing, analytics */
+.row-box{
+    position: relative;
+    width: 200px;
+    left: 60px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 110px;
+    margin-left: 51px;
+    padding: 10px;
+    border-radius: 11px;
+    box-shadow: #d3d0ce 1px 6px 12px 2px;
+}
+/* height width of logos inside real estate, ecommerce, cloud computing, analytics boxes */
+.row-box img{
+    height: 30px;
+    width: 25px;
+}
+/* font for real estate, ecommerce, cloud computing, analytics */
+.row-box h6{
+    font-size: 15px;
+    margin: 9px;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+}
+/*styling left arrow buttons present in Industries we've worked with, Our Clients */
+.left-side-arrow{
+    cursor: pointer;
+}
+/* adjusting image of left arrow */
+.left-side-arrow img{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    margin-top: 100px;
+    margin-left: 20px;
+    border-radius: 50%;
+}
+/* mouse over effect for left arrow */
+.left-side-arrow img:hover{
+    background-color: #78dcfa;
+    box-shadow: #27434e 1px 6px 12px 2px;
+}
+/*styling right arrow buttons present in Industries we've worked with, Our Clients */
+.right-side-arrow{
+    cursor: pointer;
+}
+/* adjusting image of right arrow */
+.right-side-arrow img{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    right: 20px;
+    margin-top: 100px;
+    border-radius: 50%;
+}
+/* mouse over effect for right arrow */
+.right-side-arrow img:hover{
+    background-color: #78dcfa;
+    box-shadow: #678d9c 1px 6px 12px 2px;
+}
+/* adjusting boxes of avidian, caller ready, woodruff, ever loved boxes */
+.row-box-second{
+    position: relative;
+    width: 200px;
+    left: 60px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 110px;
+    margin-left: 51px;
+    padding: 10px;
+    border-radius: 11px;
+    box-shadow: #d3d0ce 1px 6px 12px 2px;
+}
+/* height width of logos inside avidian, caller ready, woodruff, ever loved boxes */
+.row-box-second img{
+    height: 40px;
+    width: 126px;
+}
+/* added background to our team section */
+#our-team{
+    height: 700px;
+    width: 100%;
+    background: url('Images/taskbg-servicesection3.jpg')no-repeat center center/cover;
+}
+/* place vasili savitski, julia, nani in one div and place that div on right side */
+.team-container{
+    position: absolute;
+    right: 0;
+}
+/* margin to all the team members in our team */
+.col1{
+    margin-right: 60px;
+    margin-bottom: 30px;
+}
+/* adjust height width of all team members inside our team  */
+.col1 img{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+/* style names of all the team members in our team */
+.col1 h6{
+    color: #0c2e3a;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Atkinson Hyperlegible', sans-serif
+}
+/* style job designation of all team member */
+.col1 p{
+    color: #78706d;
+    text-align: center;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+}
+/* place ryan, kathryn in one div and place that div on right side just near to vasili savitski, julia, nani */
+.team2-container{
+    position: absolute;
+    right: 300px;
+    margin: 99px 2px;
+}
+/* place melina,azeem in one div and place that div on right side just near to ryan, kathryn */
+.team3-container{
+    position: absolute;
+    right: 600px;
+    margin-top: 200px;
+}
+/* place martine,sean in one div and place that div on right side just near to melina,azeem  */
+.team4-container{
+    position: absolute;
+    margin: 73px 0px 0 146px;
+}
+/* added background to latest blog section */
+#latest-blog{
+    height: 700px;
+    width: 100%;
+    background: url('Images/blogsBg1.jpg')no-repeat center center/cover;
+}
+/* place blog boxes in a row */
+.blogColumns{
+    display: flex;
+}
+/* style for boxes present in latest blog */
+.blogBox{
+    height: 485px;
+    width: 342px;
+    border: 2px solid white;
+    margin-top: 91px;
+    margin-left: 54px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: #d3d0ce 1px 6px 12px 2px;
+}
+/* style to images present in blog boxes */
+.blogImg{
+    height: 178px;
+    width: 303px;
+    border-radius: 20px;
+    margin: 20px;
+}
+/* style to heading present in blog boxes */
+.blogBox h4{
+    font-size: 20px;
+    margin: 26px;
+    color: #001c28;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+}
+/* style to paragraph present in blog boxes */
+.blogBox p{
+    color: #a6aeb1;
+    margin: 18px;
+    font-size: 16px;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+}
+/* do not display text of more id */
+#more{
+    display: none;
+}
+/* do not display text of more1 id */
+#more1{
+    display: none;
+}
+/* do not display text of more2 id */
+#more2{
+    display: none;
+}
+/* adjusting right slider arrow button present in blog box1("The 4 Main Components..") */
+.blog-btn1 button{
+    margin-top: 66px;
+    margin-left: 10px;
+}
+/* adjusting right slider arrow button present in blog box2("Facebook's news..") */
+.blog-btn2 button{
+    margin-left: 10px;
+}
+/* adjusting right slider arrow button present in blog box3("A Day At The Google..") */
+.blog-btn3 button{
+    margin-left: 10px;
+    margin-top: 20px;
+}
+/* added background to subscribe section */
+#subscription{
+    height: 400px;
+    width: 100%;
+    background: url('Images/SubsciptionBg.jpg')no-repeat center center/cover;
+}
+/* styling for heading of subscribe */
+.subscribe h1{
+    text-align: center;
+    margin-top: 105px;
+    font-size: 45px;
+    color: #002838;
+    line-height: 60px;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+}
+/* small bottom border to sabscribe heading */
+.subscribe span{
+    border-bottom: 10px solid #d45f3c;
+}
+/* styling paragraph in subscribe section */
+.subscribe p{
+    text-align: center;
+    margin-top: 35px;
+    color: #6e777e;
+    font-size: 18px;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+}
+/* positioning email div */
+.email-btn{
+    position: absolute;
+    left: 350px;
+    width: 40%;
+    padding: 10px;
+    margin-top: 86px;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: #d3d0ce 1px 6px 12px 2px;
+}
+/* removing default styling of email input */
+.email-btn input{
+    border: none;
+    height: 40px;
+    font-size: 13px;
+    color: #abb0b3;
+    margin-left: 37px;
+    outline: none;
+}
+/* placing email button on right side of div */
+.email-btn button{
+    float: right;
+}
+/* *********************Footer Section*********************** */
+/* added background to the footer section */
+#footer{
+    width: 100%;
+    background-color: #ffe4e0;
+}
+/* place footer element in a row */
+.footer-row{
+    display: flex;
+}
+/* positioning HeyLead logo, paragraph & social-media links */
+.footer-col{
+    position: relative;
+    left: 70px;
+    width: 307px;
+}
+/* height width of HeyLead logo */
+.footer-company-logo{
+    height: 55px;
+    width: 160px;
+    margin: 40px;
+}
+/* styling for paragraph (starts with "HeyLead is all about lead generation and.. ")*/
+.footer-col p{
+    margin-left: 40px;
+    font-size: 17px;
+    line-height: 22px;
+    color: #868686;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+}
+/* facebook twitter button in a row */
+.social-media{
+    display: flex;
+}
+/* styling social media buttons */
+.social-link{
+    position: relative;
+    cursor: pointer;
+    border-radius: 50%;
+    background: none;
+    width: 59%;
+    left: 20px;
+    border: none;
+}
+/* facebook twitter button mouse over effect */
+.social-link:hover{
+    background: none;
+    box-shadow: #27434e 1px 6px 12px 2px;
+}
+/* styling facebook, twitter images inside social media button */
+.social-media img{
+    height: 69px;
+    position: relative;
+    left: -22px;
+}
+/* positioning About, Contact us */
+.footer-col2{
+    position: relative;
+    left: 253px;
+    margin: 70px 50px 0 0;
+}
+/* styling heading About ,Contact us */
+.footer-col2 h4{
+    font-size: 36px;
+    color: #0e2022;
+    margin: 30px 20px;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+}
+/* removing default styling of who we are?, terms and condition,privacy policy,sitemap */
+.footer-col2 ul li{
+    list-style: none;
+}
+/* styling who we are?, terms and condition,privacy policy,sitemap */
+.footer-col2 ul li a{
+    text-decoration: none;
+    margin: 20px;
+    line-height: 40px;
+    font-size: 17px;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    color: #868686;
+}
+/* mouse over effect on who we are?, terms and condition,privacy policy,sitemap */
+.footer-col2 ul li a:hover{
+    color: #ff7f27;
+    box-shadow: #d3d0ce 1px 6px 12px 2px;
+    border-radius: 20px;
+    padding: 8px;
+}
+/* margin to address logo, address,email logo, email id, phone logo,phone number */
+.contactIcon{
+    margin: 20px;
+}
+/* height width of address,email,phone logo */
+.contactIcon img{
+    height: 15px;
+    width: 21px;
+}
+/* Styling for address, email id, phone number */
+.footer-col2 p{
+    display: inline;
+    color: #868686;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    margin-left: 10px;
+    font-size: 17px;
+}
+
